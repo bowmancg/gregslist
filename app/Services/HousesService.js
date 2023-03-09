@@ -8,11 +8,12 @@ function _saveHouses() {
 
 class HousesService {
     findHouse(formData) {
-        let house = new House(formData)
+        let house = new House(formData.year, formData.name, formData.bedrooms, formData.bathrooms, formData.sqft, formData.price, formData.description, formData.imgUrl)
         console.log('finding house');
         appState.houses.push(house)
         appState.emit('houses')
         console.log(appState.houses);
+        _saveHouses()
     }
 }
 
