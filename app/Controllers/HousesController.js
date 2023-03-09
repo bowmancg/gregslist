@@ -31,5 +31,9 @@ export class HousesController {
     findHouse() {
         event.preventDefault()
         const form = event.target
+        let formData = getFormData(form)
+        console.log(formData);
+        housesService.findHouse(formData)
+        form.reset()
     }
 }

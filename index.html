@@ -23,14 +23,14 @@
           loading="lazy">
         <span class="ms-2">gregslist</span>
       </a>
-      <div class="btn px-3 py-2 rounded fs-3" onclick="app.housesController.showHouses()"><i class="mdi mdi-home"></i></div>
+      <div class="btn text-light px-3 py-2 rounded fs-3" onclick="app.housesController.showHouses()"><i class="mdi mdi-home"></i></div>
     </nav>
   </header>
   <main>
     <div class="container-fluid">
       <section class="row text-light justify-content-center">
         <div id="form" class="col-12 col-md-8 mt-3">
-          <form onsubmit="app.housesController.addHouse()" class="row bg-dark rounded elevation-2 p-4">
+          <form onsubmit="app.housesController.findHouse()" class="row bg-dark rounded elevation-2 p-4">
             <h3>Find a House</h3>
             <div class="mb-2 col-4">
               <label for="name">Name</label>
